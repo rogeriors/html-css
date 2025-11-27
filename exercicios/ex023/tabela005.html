@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Tabelas simples</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+        table {
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            background-color: lightgray;
+            font-weight: bold;
+            padding: 10px;
+            font-size: 1.2em;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 4px;
+        }
+
+        tr.linha {
+            background-color: rgb(80, 80, 80);
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(80, 80, 80);
+        }
+
+        col.cor01 {
+            background-color: aqua;
+        }
+
+        col.cor02 {
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cor01">
+            <col class="cor02" span="2">
+            <col style="background-color: rgb(0, 223, 30);">
+        </colgroup>
+        <caption>Teste cor em coluna</caption>
+        <thead>
+            <tr class="linha">
+                <th scope="col">Coluna 01</th>
+                <th scope="col">Coluna 02</th>
+                <th scope="col">Coluna 03</th>
+                <th scope="col">Coluna 04</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
