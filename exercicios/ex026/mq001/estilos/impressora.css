@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+*{
+    padding: 10;
+    margin: 10;
+}
+
+html {
+    font-family: 'Courier New', Courier, monospace;
+    size: 1.5em;
+    line-height: 1.5em;
+}
+
+menu {
+    display: none;
+}
+
+article::after{
+    font-style: italic;
+    size: 1em;
+    content: "Impressão direta do site www.naoexiste.com";
+}
